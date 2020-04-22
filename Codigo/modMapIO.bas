@@ -1324,6 +1324,7 @@ Public Function Save_CSM(ByVal MapRoute As String) As Boolean
     
     Put #fh, , MH
     Put #fh, , MapSize
+    Debug.Print (MH.NumeroBloqueados)
     Put #fh, , MapDat
     Put #fh, , L1
 

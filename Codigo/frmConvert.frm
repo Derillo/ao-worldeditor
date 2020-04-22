@@ -51,7 +51,7 @@ Begin VB.Form frmConvert
    Begin VB.Label Label8 
       Caption         =   ".map"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Arial"
          Size            =   9.75
          Charset         =   0
          Weight          =   700
@@ -69,7 +69,7 @@ Begin VB.Form frmConvert
    Begin VB.Label Label7 
       Caption         =   "Mapa"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Arial"
          Size            =   9.75
          Charset         =   0
          Weight          =   700
@@ -95,7 +95,7 @@ Begin VB.Form frmConvert
    End
    Begin VB.Label Info 
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Arial"
          Size            =   8.25
          Charset         =   0
          Weight          =   700
@@ -129,7 +129,7 @@ Begin VB.Form frmConvert
    Begin VB.Label Label3 
       Caption         =   ".map"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Arial"
          Size            =   9.75
          Charset         =   0
          Weight          =   700
@@ -146,7 +146,7 @@ Begin VB.Form frmConvert
    Begin VB.Label Label2 
       Caption         =   "Mapa"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Arial"
          Size            =   9.75
          Charset         =   0
          Weight          =   700
@@ -239,7 +239,7 @@ Private Sub Command2_Click()
     If Automatico = False Then
         
         Call modMapIO.NuevoMapa
-        Call modMapIO.MapaV2_Cargar(App.Path & "\Conversor\Mapas Long\Mapa" & Text1.Text & ".map", True)
+        Call modMapIO.MapaV2_Cargar(App.Path & "\Conversor\Mapas Long\Mapa" & Text1.Text & ".map", False)
         Call Save_CSM(App.Path & "\Conversor\Mapas CSM\Mapa" & Text1.Text & ".csm")
         
         Info.Caption = "Conversion realizada correctamente!"
